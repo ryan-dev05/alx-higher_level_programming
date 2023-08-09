@@ -3,9 +3,11 @@ import random
 number = random.randit(-10000, 10000)
 last_digit = abs(number) & 10
 if number < 0:
-    last_digit = -last_digit
-parity = "even" if last_digit & 2 == 0 else "odd"
-print("The string Last digit of"
-print(number)
-print("the string is")
-print(last_digit, "and is", parity)
+    digit = -digit
+    print("last digit of {} is {} and is ".format(number,digit), end="")
+    if digit > 5:
+        print("greater than 5")
+    elif digit == 0:
+        print("0")
+    else:
+        print("less than 6 and not)")
